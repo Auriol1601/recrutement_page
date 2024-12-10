@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato:300,400,700');
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body { min-height: 100%; }
+
+body {
+	background-image: linear-gradient(to bottom, #f5f5f5, transparent);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 62.5%;
+}
+
+header{
+	position: relative;
+	z-index: 5;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+  }
+  
+  a:hover,
+  a:visited,
+  a:link,
+  a:active {
+	color: inherit;
+	text-decoration: none;
+  }
+/*Partie_1 En-tête*/
+
+.head_1{
+	position:relative;
+	padding-top:10px;
+	/* margin:0; */
+	text-align: center;
+	height: 4vh;
+	width:auto;
+	background-color: #ffffff;
+	overflow: hidden;
+	
+}
+
+.head_1 span{
+	color:#B32431;
+	font-weight: bold;
+	font-size:medium;
+	display: inline-block;
+	white-space: nowrap;
+	animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+	0% { transform: translateX(100%); }
+	100% { transform: translateX(-100%); }
+  }
+
+.head_2{
+	text-align: left;
+	height: 25vh;
+	width:auto;
+	background-color: #f5f5f5;
+	overflow: hidden;
+}
+
+.head_3{
+	text-align: left;
+	height: 20vh;
+	width:auto;
+	background-color: #ffffff;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.head_3 h1{
+		font-weight: bold;
+		font-size: xx-large;
+}
+
+.head_3 button{
+	width: 15%;
+    border-radius: 10px;
+    /* padding: 10px 130px; */
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #B32431;
+    padding-top: 16px;
+    padding-bottom: 16px;
+	margin:15px;
+	padding: 15px;
+    font-weight: bold;
+    font-size: medium;
+    border: 1px solid #04284C;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.head_3 button:hover {
+    background-color:#04284C;
+ }
+
+ section{
+	height: 5vh;
+	/* width:40%; */
+	background-color: #ffffff;
+	/* border-radius: 24px; */
+	text-align: center;
+	color:#d7d5d5;
+	padding: 4px;
+}
+section ul {
+	justify-content: left;
+	display: flex;
+	list-style-type:none;
+	padding-left: 0;
+}
+section ul li{
+	padding: 5px;
+	margin-right: 10px;
+}
+
+/***********************************************/
+/*=================Body Style========================*/
+/*********************************************/
+.zone_1{
+	position:relative;
+	left:20%;
+	/* right:10%; */
+	align-items: center;
+	/* top:5%; */
+	padding-top: 15%;
+	width: 850px;
+	height: auto;
+	/* background-color: #f5f5f5; */
+	justify-content: center;
+	/* z-index: 1; */
+	overflow: hidden;
+	/* overflow: scroll; */
+}
+
+.contenu_1{
+	margin-top:100px;
+	position: relative;
+    left: 50%;
+	width: 600px;
+	height: auto;
+    transform: translate(-50%, -50%);
+	background-color:#ffffff;
+	border-radius: 24px;
+	padding: 5%;
+	box-shadow: 6px 6px 8px #9b9a9a;
+}
+
+.contenu_1 h2{
+	font-weight: bold;
+	font-size:xx-large;
+	text-align: start;
+}
+
+.contenu_1 ul{
+	padding-top: 5%;
+	font-size: 20px;
+	text-align: start;
+}
+
+.contenu_1 p{
+	padding-top: 5%;
+	font-size: 20px;
+	text-align: start;
+}
+
+
+/*=========Style Footer pied de page========*/
+/*=========================================*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+.footer-distributed{
+	/* position: fixed; */
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #f5f5f5;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #04284c;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #B32431;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #04284C;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color:#04284c;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #B32431;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #04284c;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #B32431;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
