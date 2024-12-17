@@ -1,0 +1,413 @@
+/* style.css */
+*{
+	margin: 0;
+	padding: 0;
+}
+/* Style pour le loader */
+#loader {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* Couleur de fond */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  }
+  
+  /* Spinner (animation circulaire) */
+  .spinner {
+    border: 8px solid #f3f3f3; /* Couleur de fond du cercle */
+    border-top: 8px solid #3498db; /* Couleur du bord animé */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Animation de rotation */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+  header{
+    position: relative;
+    z-index: 5;
+    box-shadow: 0px 3px 6px #9b9a9a;
+    width: 100%;
+    height: auto;
+    margin-bottom:3%;
+    background-color: #08013c;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    }
+    
+    a:hover,
+    a:visited,
+    a:link,
+    a:active {
+    color: inherit;
+    text-decoration: none;
+    }
+  /*Partie_1 En-tête*/
+  
+  .texte_animation{
+      text-transform: uppercase;
+      background-image: linear-gradient(
+      -225deg,
+      #08013c 0%,
+      #08013c 29%,
+      #cf0013 67%,
+      #cf0000 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      /* text-fill-color: transparent; */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+      display: inline-block;
+      font-size: 50px;
+    }
+  
+    @keyframes textclip {
+      to {
+      background-position: 200% center;
+      }
+  }
+  
+  .titre{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoBabo img{
+    width: 25%;
+    /* background-color: #04284c; */
+    margin-left: 61%;
+  }
+  
+  nav{
+    /* align-items: center; */
+    /* height: 8vh; */
+    width:auto;
+    background-color: #08013c;
+    margin-left: 20%;
+    margin-right: 20%;
+    /* padding: 3%; */
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    
+  }
+  
+  nav ul {
+    /* justify-content: left; */
+    display: flex;
+    list-style-type:none;
+    /* padding-left: 0; */
+  }
+  
+  nav ul li{
+    padding: 10px;
+    margin-right: 10px;
+    /* background-color: #ff7f00; */
+    font-weight: bold;
+    font-size: medium;
+    color:#ffffff;
+    border-radius: 24px;
+    /* opacity:10%; */ 
+  }
+  
+  nav ul li:hover{
+    background-color: #cf0013;
+  }
+  
+  .head_1{
+    position:relative;
+    padding-top:10px;
+    /* margin:0; */
+    text-align: center;
+    height: 4vh;
+    width:auto;
+    background-color: #cf0013;
+    overflow: hidden;	
+  }
+  
+  .head_1 span{
+    color:#ffffff;
+    font-weight: bold;
+    font-size:medium;
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+    }
+  
+  .head_2{
+    padding-top: 25px;
+    text-align: left;
+    height: 25vh;
+    width:auto;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+  
+  .head_3{
+    text-align: left;
+    height: 20vh;
+    width:auto;
+    background-color: #ffffff;
+    margin-left: 20%;
+    margin-right: 20%;
+    /* position:fixed; */
+  }
+  
+  .head_3 h1{
+      font-weight: bold;
+      font-size: xx-large;
+  }
+  
+  .head_3 button{
+    width: 15%;
+      /* padding: 10px 130px; */
+      border: none;
+      color: #ffffff;
+      cursor: pointer;
+      background-color: #cf0013;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      margin:15px;
+      padding: 15px;
+      font-weight: bold;
+      font-size: medium;
+      border-radius: 24px;
+      text-align: center;
+  }
+  
+  .head_3 button:hover {
+      background-color:#08013c;
+   }
+  
+   section{
+    height: 5vh;
+    /* width:40%; */
+    background-color: #ffffff;
+    /* border-radius: 24px; */
+    text-align: center;
+    color:#d7d5d5;
+    padding: 4px;
+  }
+  
+  section ul {
+    justify-content: left;
+    display: flex;
+    list-style-type:none;
+    padding-left: 0;
+  }
+  section ul li{
+    padding: 5px;
+    margin-right: 10px;
+  }
+
+
+  .zone_1{
+    position:relative;
+    left:20%; 
+    right:10%;
+    align-items: center;
+    /* top:5%; */
+    padding-top:18%;
+    width: 850px;
+    height:50%;
+    /* background-color: #f5f5f5; */
+    justify-content: center;
+    /* z-index: 1; */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+  }
+  
+  .contenu_1{
+    margin-bottom: 15px;
+    position: relative;
+      left: 50%;
+    width: 600px;
+    height: auto;
+      transform: translate(-50%, -50%);
+    background-color:#ffffff;
+    border-radius: 24px;
+    padding: 5%;
+    box-shadow: 6px 6px 8px #9b9a9a;
+    overflow: hidden;
+  }
+  .contenu_1_3{
+    margin-top: 20%;
+    position: relative;
+      left: 50%;
+    width: 600px;
+    height: auto;
+      transform: translate(-50%, -50%);
+    background-color:#ffffff;
+    border-radius: 24px;
+    padding: 5%;
+    box-shadow: 6px 6px 8px #9b9a9a;
+  }
+  
+  .contenu_1 h2{
+    font-weight: bold;
+    font-size:xx-large;
+    text-align: start;
+  }
+  
+  .contenu_1_3 h2{ 
+    font-weight: bold;
+    font-size:xx-large;
+    text-align: start;
+    padding-bottom: 3%;
+  }
+  .contenu_1_3 p{ 
+    font-size: 20px;
+  }
+  
+  
+  
+  .contenu_1 ul{
+    padding-top: 5%;
+    font-size: 20px;
+    text-align: start;
+  }
+  
+  .contenu_1 p{
+    padding-top: 5%;
+    font-size: 20px;
+    text-align: start;
+  }
+  
+  .contenu_1 button{
+    width: auto;
+      border-radius: 10px;
+      /* padding: 10px 130px; */
+      border: none;
+      color: #08013c;
+      cursor: pointer;
+      background-color: #ffffff;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    margin:15px;
+    padding: 15px;
+      font-weight: bold;
+      font-size: medium;
+      border: 1px solid #04284C;
+      border-radius: 24px;
+      text-align: center;
+  }
+  
+  .contenu_1 button:hover {
+      background-color:#ff7f00;
+   }
+  
+  .contenu_2{
+    /* margin-top:100px; */
+    /* text-align: center; */
+    /* display:flex; */
+      left: 50%;
+    display:inline-flex;
+    width: 65%;
+    height: auto;
+      transform: translate(10%, -5%);
+    /* background-color:#41a959; */
+    /* border-radius: 24px; */
+    padding: 5%;
+    /* box-shadow: 6px 6px 8px #9b9a9a; */
+    /* margin-top: 5%;
+    margin-right: 5%;*/
+    overflow: hidden;
+    overflow-x: scroll; /* Active le scroll horizontal */
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    scroll-behavior: smooth;
+    margin-bottom: 5%;
+  }
+  .contenu_2::-webkit-scrollbar {
+    display: none; /* Cacher la barre de scroll sur Chrome/Safari */
+    }
+  .Box_Offre{
+    /* margin-left: 10px; */
+    color:#ffffff;
+    /* margin-top:100px; */
+    /* text-align: center; */
+    position: relative;
+      /* left: 50%; */
+    width: 250px;
+    height: auto;
+      /* transform: translate(-50%, -15%); */
+    background-color:#08013c;
+    border-radius: 24px;
+    padding:6%;
+    box-shadow: 6px 6px 8px #9b9a9a;
+    overflow: hidden;
+  }
+  
+  .zone_1 h3{
+    color: #9b9a9a;
+    font-size: xx-large;
+    padding-bottom: 30px;
+    padding-left: 15%;
+  }
+  
+  .Box_Offre h2{
+    color: #ffffff;
+    font-weight: bold;
+    font-size:1.3rem;
+    text-align: center;
+  }
+  
+  
+  .Box_Offre p{
+    padding-top: 5%;
+    margin-bottom: 8%;
+    font-size: 18px;
+    text-align: start;
+  }
+  
+  .Box_Offre button{
+    width: auto;
+      /* padding: 10px 130px; */
+      border: none;
+      color: #08013c;
+      cursor: pointer;
+      background-color: #ffffff;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    margin:15px;
+    padding: 15px;
+      font-weight: bold;
+      font-size: medium;
+      border-radius: 24px;
+      text-align: center;
+  }
+  
+  .Box_Offre button:hover {
+      background-color:#cf0013;
+    color: #ffffff;
+   }
