@@ -215,11 +215,11 @@ section ul li{
 	/* top:5%; */
 	padding-top:18%;
 	width: 850px;
-	height:50%;
+	height:auto;
 	/* background-color: #f5f5f5; */
 	justify-content: center;
 	/* z-index: 1; */
-	/* overflow: hidden; */
+	overflow: hidden;
 	/* overflow: scroll; */
 }
 
@@ -303,51 +303,49 @@ section ul li{
  }
 
 .contenu_2{
-	/* margin-top:100px; */
-	/* text-align: center; */
-	/* display:flex; */
-    left: 50%;
-	display:inline-flex;
-	width: 65%;
-	height: auto;
-    transform: translate(10%, -5%);
-	/* background-color:#41a959; */
-	/* border-radius: 24px; */
-	padding: 5%;
-	/* box-shadow: 6px 6px 8px #9b9a9a; */
-	/* margin-top: 5%;
-	margin-right: 5%;*/
-	overflow: hidden;
-	overflow-x: scroll; /* Active le scroll horizontal */
-	white-space: nowrap; /* Empêche le retour à la ligne */
-	scroll-behavior: smooth;
-	margin-bottom: 5%;
+    /* background-color: #cf0013; */
+    position: relative;
+    display: flex;
+    left: 5%;
+    align-items: center;
+    gap: 30px;
+    width: 655px;
+    height: 350px;
+	padding: 5px;
+	transform: translate(6%, -30%);
+    /* overflow: hidden; */
+    overflow: hidden;
+    overflow-x: scroll; /* Active le scroll horizontal */
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    scroll-behavior: smooth;
+    /* margin-bottom: 5%; */
+	/* background-color: #ff7f00; */
 }
 .contenu_2::-webkit-scrollbar {
 	display: none; /* Cacher la barre de scroll sur Chrome/Safari */
   }
+
+  .Offre_mobile{
+	display: none;
+  }
 .Box_Offre{
-	/* margin-left: 10px; */
 	color:#ffffff;
-	/* margin-top:100px; */
-	/* text-align: center; */
-	position: relative;
-    /* left: 50%; */
 	width: 250px;
-	height: auto;
-    /* transform: translate(-50%, -15%); */
+	height: 200px;
 	background-color:#08013c;
 	border-radius: 24px;
-	padding:6%;
+	padding:4%;
 	box-shadow: 6px 6px 8px #9b9a9a;
-	overflow: hidden;
 }
-
+ 
 .zone_1 h3{
 	color: #9b9a9a;
 	font-size: xx-large;
-	padding-bottom: 30px;
-	padding-left: 15%;
+	padding-bottom: 15px;
+	padding-left: 5%;
+	position: relative;
+	transform: translate(6%, -250%);
+	/* background-color: #08013c; */
 }
 
 .Box_Offre h2{
@@ -530,7 +528,7 @@ section ul li{
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #cf0013;
-	font-size: 14px;
+	font-size: 24px;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
@@ -819,7 +817,7 @@ section ul li{
 		/* text-align: center; */
 		/* display:flex; */
 		left: 0%;
-		display:inline-flex;
+		display:none;
 		width: 350px;
 		height: auto;
 		transform: translate(5%, -35%);
@@ -834,6 +832,22 @@ section ul li{
 		white-space: nowrap; /* Empêche le retour à la ligne */
 		scroll-behavior: smooth;
 	}
+
+	.Offre_mobile{
+				/* margin-top:100px; */
+		/* text-align: center; */
+		/* display:flex; */
+		left: 0%;
+		display:inline-flex;
+		width: 350px;
+		height: auto;
+		transform: translate(5%, -80%);
+		/* background-color:#41a959; */
+		/* border-radius: 24px; */
+		/* padding: 5%; */
+		/* box-shadow: 6px 6px 8px #9b9a9a; */
+		margin-top: 30%;
+	}
 	
 	.Box_Offre{
 		/* margin-left: 10px; */
@@ -842,7 +856,7 @@ section ul li{
 		/* text-align: center; */
 		position: relative;
 		/* left: 50%; */
-		width: 170px;
+		width: 180px;
 		height: auto;
 		/* transform: translate(-50%, -15%); */
 		background-color:#08013c;
@@ -853,17 +867,17 @@ section ul li{
 	}
 	
 	.zone_1 h3{
+		display: none;
 		color: #9b9a9a;
 		font-size: x-large;
-		padding-bottom: 30px;
+		padding-bottom: 3px;
 		padding-left: 10%;
 	}
 	
 	.Box_Offre h2{
 		color: #ffffff;
 		font-weight: bold;
-		font-size:14px;
-		/* text-align: center; */
+		font-size:21px;
 	}
 	
 	

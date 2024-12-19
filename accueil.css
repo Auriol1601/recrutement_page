@@ -211,9 +211,10 @@ section ul li{
 	position:relative;
 	left:15%; 
 	right:5%;
-  align-items: center;
+  	align-items: center;
 	/* top:5%; */
 	padding-top:2%;
+	padding-bottom: 5%;
 	width: 1050px;
 	height:50%;
 	/* background-color: #f5f5f5; */
@@ -231,14 +232,15 @@ section ul li{
     align-items: center;
     gap: 30px;
     width: 625px;
-    height: 400px;
-    overflow: hidden;
+    height: 300px;
+    /* overflow: hidden; */
     overflow: hidden;
     overflow-x: scroll; /* Active le scroll horizontal */
     white-space: nowrap; /* Empêche le retour à la ligne */
     scroll-behavior: smooth;
+	/* background-color: #cf0013; */
     /* margin-bottom: 5%; */
-    padding: 3%;
+    padding: 10px;
 }
 .contenu_2::-webkit-scrollbar {
 	display: none; /* Cacher la barre de scroll sur Chrome/Safari */
@@ -295,74 +297,6 @@ section ul li{
     background-color:#cf0013;
 	color: #ffffff;
  }
-
-/*=========Style Footer pied de page========*/
-/*=========================================*/
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-
-.footer-distributed{
-	/* position: fixed; */
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: #08013c;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 55px 50px;
-}
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
-}
-
-/* Footer left */
-
-.footer-distributed .footer-left{
-	width: 40%;
-}
-
-/* The company logo */
-
-.footer-distributed h3{
-	color:  #ffffff;
-	/* font: normal 36px 'Open Sans', cursive; */
-	font-size: xx-large;
-	margin: 0;
-}
-
-.footer-distributed h3 span{
-	color:  #ffffff;
-}
-
-/* Footer links */
-
-.footer-distributed .footer-links{
-	color:  #cf0013;
-	margin: 20px 0 12px;
-	padding: 0;
-}
-
-.footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-  font-weight:400;
-	text-decoration: none;
-	color:  inherit;
-}
-
-.footer-distributed .footer-company-name{
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
-}
 
 /*=========Style Footer pied de page========*/
 /*=========================================*/
