@@ -17,8 +17,8 @@ body {
 header{
 	position: relative;
 	z-index: 5;
-	box-shadow: 0px 3px 6px #9b9a9a;
-	width: 100%;
+	box-shadow: 0px 6px 6px #9b9a9a;
+	width: auto;
 	margin-bottom:3%;
 }
 
@@ -67,13 +67,16 @@ a {
 .titre{
 	background-color: #ffffff;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 }
 
 .logoBabo img{
-	width: 25%;
+	width: 15%;
 	/* background-color: #04284c; */
-	margin-left: 61%;
+	position: relative;
+	left:39%;
+	padding:3%;
 }
 
 nav{
@@ -204,7 +207,7 @@ section ul li{
 }
 
 /***********************************************/
-/*=================Body Style========================*/
+/*=================Body Style=================*/
 /*********************************************/
 
 .zone_1{
@@ -219,7 +222,7 @@ section ul li{
 	height:50%;
 	/* background-color: #f5f5f5; */
 	/* z-index: 1; */
-	overflow: hidden;
+	/* overflow: hidden; */
 	/* overflow: scroll; */
   /* background-color: #cf0000; */
 }
@@ -493,263 +496,167 @@ section ul li{
 /*===========================================*/
 
 @media (max-width: 900px) {
+/* Reset général */
 
-	header{
-		z-index: 5;
-		box-shadow: 0px 3px 6px #9b9a9a;	
-		margin-bottom:5%;
-		width: 130%;
-	}
-
-	.texte_animation{
-		font-size: 30px;
-	}
-	
-	.titre {
-        flex-direction: column; /* Empiler le contenu en colonne */
-        align-items: center;
-        padding: 5%;
-    }
-
-	.logoBabo img{
-		width: 25%;
-		/* background-color: #04284c; */
-		margin-left: 38%;
-	}
-
-	nav{
-		height: auto;
-		width:30%;
-		margin-left: 35%;
-		/*margin-right: 20%; */
-		/* flex-direction: column; */
-		justify-content: center;
-		border-radius: 24px;
-	}
-
-	nav ul {
-		/* background-color: #cf0013; */
-		/* justify-content: left; */
-		flex-direction:column;
-		list-style-type:none;
-		/* padding-left: 0; */
-	}
-
-	nav ul li{
-		padding: 10px;
-		/* margin-right: 10px; */
-		/* background-color: #cf0013; */
-		font-weight: bold;
-		font-size: 11px;
-		color:#ffffff;
-		/* border-radius: 24px;
-		opacity:10%; */
-	}
-
-
-	.head_1{
-		position:relative;
-		padding-top:10px;
-		/* margin:0; */
-		text-align: center;
-		height: 4vh;
-		width:auto;
-		background-color: #08013c;
-		overflow: hidden;	
-	}
-
-	.head_1 span{
-		color:#ffffff;
-		font-weight: bold;
-		font-size:medium;
-		display: inline-block;
-		white-space: nowrap;
-		animation: scroll 20s linear infinite;
-	}
-	.head_2{
-		padding-top: 15px;
-		padding-left: 12%;
-		text-align: left;
-		height: auto;
-		width:auto;
-		/* background-color: #08013c; */
-		overflow: hidden;
-		padding-bottom: 10px;
-	}
-	.head_3{
-		/* text-align: left; */
-		text-align: center;
-		height: auto;
-		width:40vh;
-		background-color: #ffffff;
-		margin-left: 5%;
-		margin-right: 10%;
-		/* position:fixed; */
-	}
-	.head_3 h1{
-		font-weight: bold;
-		font-size: medium;
-	}
-
-	.head_3 button{
-		width: auto;
-		/* padding: 10px 130px; */
-		border: none;
-		color: #ffffff;
-		cursor: pointer;
-		background-color: #cf0013;
-		padding-top: 16px;
-		/* padding-bottom: 16px; */
-		margin:10px; 
-		padding: 10px;
-		font-weight: bold;
-		font-size: medium;
-		border-radius: 24px;
-		text-align: center;
-	}
-
-	section{
-		height: 5vh;
-		/* width:40%; */
-		background-color: #ffffff;
-		/* border-radius: 24px; */
-		text-align: center;
-		color:#d7d5d5;
-		padding: 4px;
-		font-size:5px;
-	}
-
-	section ul {
-		justify-content: left;
-		display: flex;
-		list-style-type:none;
-		padding-left: 0;
-	}
-
-	section ul li{
-		padding: 5px;
-		margin-right: 5px;
-	}
-
-
-/***********************************************/
- /*================Respnsive Body Style=======*/
-/*********************************************/
-
-.zone_1{
-	position:relative;
-	/* left:20%;
-	right:25%; */
-	align-items: center;
-	/* top:5%; */
-	padding-top: 100px;
-	/* margin-right: 10%; */
-	width: 131%;
-	height: 15%;
-	transform: translate(-13%, -1%);
-	/* background-color: #8c1616; */
-	justify-content: center;
-	/* z-index: 1; */
-	overflow: hidden;
-	/* overflow: scroll; */
-}
-
-.contenu_2{
-    /* background-color: #cf0013; */
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    left: 5%;
-    align-items: center;
-    gap: 25px;
-    width: 85%;
-    height: auto;
-    overflow: hidden;
-    overflow: hidden;
-    overflow-x: scroll; /* Active le scroll horizontal */
-    white-space: nowrap; /* Empêche le retour à la ligne */
-    scroll-behavior: smooth;
-    /* margin-bottom: 5%; */
-    /* padding-left:20%; */
-    /* background-color: #cf0000; */
-}
-.contenu_2::-webkit-scrollbar {
-	display: none; /* Cacher la barre de scroll sur Chrome/Safari */
+  
+  /* Header */
+  header {
+	z-index: 5;
+	margin-bottom: 2%;
+	width: auto; /* Fixe à 100% pour un bon ajustement */
+	/* background-color: #08013c; */
   }
-.Box_Offre{
-	color:#ffffff;
-	width: 185px;
-	height: 200px;
-	background-color:#08013c;
+  
+  .texte_animation {
+	font-size: 28px;
+	position: relative;
+	/* right: 2%; */
+	left: 2%;
+  }
+  
+  .titre {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5%;
+  }
+  
+  .logoBabo img {
+	position: relative;
+	left:33%;
+	width: 20%;
+	margin: 0 auto; /* Centré sans marge gauche */
+  }
+  
+  nav {
+	display: flex;
+	justify-content: center;
 	border-radius: 24px;
-	padding:5%;
-	box-shadow: 6px 6px 8px #9b9a9a;
-}
-
-
-.zone_1 h3{
-	color: #9b9a9a;
-	font-size: xx-large;
-	padding-left: 21%;
-}
-
-.Box_Offre h2{
+  }
+  
+  nav ul {
+	display: flex;
+	gap: 10px;
+	list-style-type: none;
+  }
+  
+  nav ul li {
+	padding: 10px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #ffffff;
+  }
+  
+  .head_1 {
+	padding: 10px 0;
+	text-align: center;
+	background-color: #08013c;
+  }
+  
+  .head_1 span {
 	color: #ffffff;
 	font-weight: bold;
-	font-size:14px;
-	text-align: center;
-}
-
-
-.Box_Offre p{
-	padding-top: 5%;
-	margin-bottom: 8%;
-	font-size: 13px;
-	text-align: start;
-}
-
-.Box_Offre button{
-	width: auto;
-    /* padding: 10px 130px; */
-    border: none;
-    color: #08013c;
-    cursor: pointer;
-    background-color: #ffffff;
-    padding-top: 16px;
-    padding-bottom: 16px;
-	margin:15px;
-	padding: 15px;
-    font-weight: bold;
-    font-size: medium;
-    border-radius: 24px;
-    text-align: center;
-}
-
-.Box_Offre button:hover {
-    background-color:#cf0013;
+	font-size: medium;
+	display: inline-block;
+	white-space: nowrap;
+	animation: scroll 20s linear infinite;
+  }
+  
+  /* Section Zone */
+  .zone_1 {
+	position: relative;
+	transform: translate(-13% , 0%);
+	/* display: flex;
+	flex-direction: column; */
+	align-items: center;
+	width: auto; /* Ajuste à la largeur de l’écran */
+	/* padding: 20px 10px; */
+	overflow: hidden;
+	/* background-color: #64c71d; */
+  }
+  
+  .contenu_2 {
+	/* display: flex;
+	flex-direction: row; */
+	position: relative;
+	transform: translate(-11% , 0%);
+	/* gap: 15px; */
+	/* overflow-x: auto; Scroll horizontal activé */
+	width: 450px;
+	height: auto;
+	/* padding: 15px; */
+	/* background-color: #cf0000; */
+	/* scroll-behavior: smooth; */
+  }
+  
+  .Box_Offre {
+	transform: translate(-20% , 0%);
 	color: #ffffff;
- }
-
- @media (max-width: 880px) {
-
-  .footer-distributed{
-    font: bold 14px sans-serif;
-    width: 130%;
+	width: 225px;
+	height: 200px;
+	background-color: #08013c;
+	border-radius: 24px;
+	padding: 5%;
+	box-shadow: 6px 6px 8px #9b9a9a;
+	text-align: center;
   }
-
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right{
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
+  
+  .Box_Offre h2 {
+	font-size: 14px;
   }
-
-  .footer-distributed .footer-center i{
-    margin-left: 0;
+  
+  .Box_Offre p {
+	font-size: 13px;
   }
+  
+  .Box_Offre button {
+	border: none;
+	background-color: #ffffff;
+	color: #08013c;
+	padding: 10px 20px;
+	font-weight: bold;
+	font-size: medium;
+	border-radius: 24px;
+	cursor: pointer;
+  }
+  
+  .Box_Offre button:hover {
+	background-color: #cf0013;
+	color: #ffffff;
+  }
+  
+  
+  /* Responsiveness */
+  @media (max-width: 880px) {
+	.logoBabo img {
+	  width: 30%;
+	}
+  
+	.contenu_2 {
+	  flex-direction: column; /* Empile les éléments */
+	}
+  
+	nav ul {
+	  flex-direction: column;
+	}
+  
+	.footer-distributed {
+	  width: auto;
+	}
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		position: relative;
+		transform: translate(8% , 0%);
+		width: 90%;
+		margin-bottom: 40px;
+		text-align: center;
+		/* background-color: #9b9a9a; */
+	}
 
-}
-
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+  }
+  
 }

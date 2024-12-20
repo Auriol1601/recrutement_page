@@ -17,7 +17,7 @@ body {
 header{
 	position: relative;
 	z-index: 5;
-	box-shadow: 0px 3px 6px #9b9a9a;
+	box-shadow: 0px 0px 6px #9b9a9a;
 	width: 100%;
 	margin-bottom:3%;
 }
@@ -67,13 +67,16 @@ a {
 .titre{
 	background-color: #ffffff;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 }
 
 .logoBabo img{
-	width: 25%;
+	width: 15%;
 	/* background-color: #04284c; */
-	margin-left: 61%;
+	position: relative;
+	left:39%;
+	padding:3%;
 }
 
 nav{
@@ -575,17 +578,17 @@ section ul li{
 	}
 
 }
-
-/**=============RESPONSIVE DESIGN============**/
-/*===========================================*/
+  /*============================================*/
+ /**=============RESPONSIVE DESIGN============**/
+/*===========================================**/
 
 @media (max-width: 900px) {
 
 	header{
 		z-index: 5;
-		box-shadow: 0px 3px 6px #9b9a9a;	
+		/* box-shadow: 0px 3px 6px #9b9a9a;	 */
 		margin-bottom:5%;
-		width: 130%;
+		width:auto;
 	}
 
 	.texte_animation{
@@ -599,9 +602,11 @@ section ul li{
     }
 
 	.logoBabo img{
-		width: 25%;
+		width: 24%;
 		/* background-color: #04284c; */
-		margin-left: 38%;
+		position: relative;
+		left:34%;
+		padding:3%;
 	}
 
 	nav{
@@ -656,7 +661,6 @@ section ul li{
 	}
 	.head_2{
 		padding-top: 15px;
-		padding-left: 12%;
 		text-align: left;
 		height: auto;
 		width:auto;
@@ -669,10 +673,9 @@ section ul li{
 		text-align: center;
 		height: auto;
 		width:40vh;
-		background-color: #ffffff;
-		margin-left: 5%;
-		margin-right: 10%;
-		/* position:fixed; */
+		position: relative;
+		right: 61px;
+		/* background-color: #ad2e2e; */
 	}
 	.head_3 h1{
 		font-weight: bold;
@@ -699,7 +702,7 @@ section ul li{
 	section{
 		height: 5vh;
 		/* width:40%; */
-		background-color: #ffffff;
+		/* background-color: #a24141; */
 		/* border-radius: 24px; */
 		text-align: center;
 		color:#d7d5d5;
@@ -716,11 +719,12 @@ section ul li{
 
 	section ul li{
 		padding: 5px;
-		margin-right: 5px;
+		margin-right:28px;
 	}
 
+     /*===================================================*/
 	/******************Body Responsive********************/
-	/*==================================================*/
+   /*===================================================*/
 
 	.zone_1{
 		position:relative;
@@ -728,11 +732,11 @@ section ul li{
 		right:25%; */
 		align-items: center;
 		/* top:5%; */
-		padding-top: 180px;
+		/* padding-top: 180px; */
 		/* margin-right: 10%; */
-		width:120%;
-		height: 20%;
-		transform: translate(-12%, -1%);
+		width:auto;
+		height:1180px;
+		transform: translate(-20%, 0%);
 		/* background-color: #8c1616; */
 		justify-content: center;
 		/* z-index: 1; */
@@ -741,27 +745,27 @@ section ul li{
 	}
 
 	.contenu_1{
-		margin-top:25px;
 		position: relative;
-		width: 310px;
+		width: 260px;
 		height: auto;
-		/* transform: translate(-20%, -20%); */
+		transform: translate(-50%, -12%);
 		background-color:#ffffff;
+		/* background-color: #08013c; */
 		border-radius: 24px;
 		/* padding: 5%; */
-		box-shadow: 6px 6px 8px #9b9a9a;
+		/* box-shadow: 6px 6px 8px #9b9a9a; */
 	}
 
 	.contenu_1_3{
 		margin-top:20%;
 		position: relative;
-		width: 310px;
+		width: 260px;
 		height: auto;
-		/* transform: translate(-20%, -20%); */
+		transform: translate(-50%, -20%);
 		background-color:#ffffff;
 		border-radius: 24px;
 		/* padding: 5%; */
-		box-shadow: 6px 6px 8px #9b9a9a;
+		/* box-shadow: 6px 6px 8px #9b9a9a; */
 	}
        
 	.contenu_1_3 h2{ 
@@ -771,7 +775,7 @@ section ul li{
 		padding-bottom: 3%;
 	}
 	.contenu_1_3 p{ 
-		font-size: 10px;
+		font-size: 12px;
 	}
 	.contenu_1 h2{
 		font-weight: bold;
@@ -787,7 +791,7 @@ section ul li{
 	
 	.contenu_1 p{
 		padding-top: 5%;
-		font-size: 10px;
+		font-size: 14px;
 		text-align: start;
 	}
 
@@ -836,7 +840,7 @@ section ul li{
 	}
 
 	.Offre_mobile{
-				/* margin-top:100px; */
+		/* margin-top:100px; */
 		/* text-align: center; */
 		/* display:flex; */
 		left: 0%;
@@ -854,7 +858,7 @@ section ul li{
 	.Box_Offre{
 		/* margin-left: 10px; */
 		color:#ffffff;
-		/* margin-top:100px; */
+		margin-top:200px;
 		/* text-align: center; */
 		position: relative;
 		/* left: 50%; */
@@ -911,7 +915,7 @@ section ul li{
 
 		.footer-distributed{
 			font: bold 14px sans-serif;
-			width: 130%;
+			width: auto;
 		}
 	
 		.footer-distributed .footer-left,
